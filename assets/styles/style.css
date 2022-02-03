@@ -253,7 +253,7 @@ section#restaurants .card .content i:hover {
   width: 65%;
   background-color: #99e2d0;
 }
-.pageMenu section .wrapper div {
+.pageMenu section .wrapper .parent {
   margin: 25px 0;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
   border-radius: 15px;
@@ -262,31 +262,36 @@ section#restaurants .card .content i:hover {
   justify-content: space-between;
   cursor: pointer;
 }
-.pageMenu section .wrapper div div {
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 0 0 0;
-  margin: 0;
+.pageMenu section .wrapper .parent .texte {
   padding: 15px;
-  flex: 1;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   width: 100%;
 }
-.pageMenu section .wrapper div div p {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+.pageMenu section .wrapper .parent .texte p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: inherit;
 }
-.pageMenu section .wrapper div:hover .check {
+.pageMenu section .wrapper .parent .price {
+  padding: 15px;
+  display: flex;
+  align-items: flex-end;
+}
+.pageMenu section .wrapper .parent .icon {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.pageMenu section .wrapper .parent:hover .check {
   padding: 0 25px;
   font-size: initial;
 }
-.pageMenu section .wrapper div:hover .check i {
+.pageMenu section .wrapper .parent:hover .check i {
   transform: rotate(0deg);
 }
-.pageMenu section .wrapper div .check {
+.pageMenu section .wrapper .parent .check {
   background-color: #99e2d0;
   display: flex;
   align-items: center;
@@ -296,7 +301,7 @@ section#restaurants .card .content i:hover {
   transition: padding 400ms, font-size 400ms ease-in-out;
   color: #ffffff;
 }
-.pageMenu section .wrapper div .check i {
+.pageMenu section .wrapper .parent .check i {
   transform: rotate(720deg);
   transition: transform 800ms;
 }
