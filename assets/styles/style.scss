@@ -282,6 +282,15 @@ section {
                 display: flex;
                 justify-content: space-between;
                 cursor: pointer;
+                animation: 800ms infinite alternate apparition;
+                transition: opacity 1s, transform 1s;
+                transition-delay: 1s;
+                &:nth-child(2) {
+                    animation-delay: 300ms;
+                }
+                &:nth-child(3) {
+                    animation-delay: 500ms;
+                }
                 .texte {
                     padding: 15px;
                     text-overflow: ellipsis;
@@ -411,5 +420,16 @@ footer {
     }
     100% {
         transform: scale(1) rotate(10deg);
+    }
+}
+
+@keyframes apparition {
+    0% {
+        opacity: 0;
+        transform: translatey(15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
