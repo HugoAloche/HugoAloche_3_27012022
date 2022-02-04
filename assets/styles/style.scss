@@ -213,7 +213,7 @@ section {
                 img {
                     width: 100%;
                     border-radius: 20px 20px 0 0;
-                    max-height: 200px;
+                    height: 150px;
                     object-fit: cover;
                 }
             }
@@ -431,5 +431,31 @@ footer {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #fonctionnement {
+        ul {
+            flex-direction: row !important;
+            justify-content: center;
+        }
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 35px;
+        flex-wrap: wrap;
+        .card {
+            min-width: 250px;
+            max-width: 250px;
+            img {
+                height: 100%;
+            }
+        }
+        .wrapper {
+            width: 80%;
+        }
     }
 }

@@ -199,7 +199,7 @@ section#restaurants .card .couverture p {
 section#restaurants .card .couverture img {
   width: 100%;
   border-radius: 20px 20px 0 0;
-  max-height: 200px;
+  height: 150px;
   object-fit: cover;
 }
 section#restaurants .card .content {
@@ -395,6 +395,30 @@ footer ul li:nth-child(3) i {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@media screen and (min-width: 768px) {
+  #fonctionnement ul {
+    flex-direction: row !important;
+    justify-content: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+  }
+  .container .card {
+    min-width: 250px;
+    max-width: 250px;
+  }
+  .container .card img {
+    height: 100%;
+  }
+  .container .wrapper {
+    width: 80%;
   }
 }
 
