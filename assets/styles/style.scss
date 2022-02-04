@@ -28,8 +28,6 @@ body {
     width: 100%;
     min-height: 100vh;
     position: relative;
-    overflow-y: hidden;
-    animation: loading 11s forwards linear;
 }
 
 .title {
@@ -283,9 +281,10 @@ section {
                 display: flex;
                 justify-content: space-between;
                 cursor: pointer;
-                animation: 800ms infinite alternate apparition;
+                animation: 800ms alternate apparition forwards;
                 transition: opacity 1s, transform 1s;
                 transition-delay: 1s;
+                opacity: 0;
                 &:nth-child(2) {
                     animation-delay: 300ms;
                 }
@@ -400,12 +399,6 @@ footer {
     }
     100% {
         background-image: linear-gradient($Primaire, $Secondaire);
-    }
-}
-
-@keyframes loading {
-    100% {
-        overflow-y: inherit;
     }
 }
 

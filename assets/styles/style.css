@@ -22,8 +22,6 @@ body {
   width: 100%;
   min-height: 100vh;
   position: relative;
-  overflow-y: hidden;
-  animation: loading 11s forwards linear;
 }
 
 .title {
@@ -262,9 +260,10 @@ section#restaurants .card .content i:hover {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  animation: 800ms infinite alternate apparition;
+  animation: 800ms alternate apparition forwards;
   transition: opacity 1s, transform 1s;
   transition-delay: 1s;
+  opacity: 0;
 }
 .pageMenu section .wrapper .parent:nth-child(2) {
   animation-delay: 300ms;
@@ -368,11 +367,6 @@ footer ul li:nth-child(3) i {
   }
   100% {
     background-image: linear-gradient(#9356dc, #ff79da);
-  }
-}
-@keyframes loading {
-  100% {
-    overflow-y: inherit;
   }
 }
 @keyframes displayNone {
