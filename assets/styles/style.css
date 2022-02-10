@@ -37,7 +37,8 @@ h2 {
   font-family: "Roboto-bold";
 }
 
-button {
+button,
+.button {
   outline: none;
   border: none;
   background-color: #9356dc;
@@ -50,7 +51,8 @@ button {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   transition: background-color 400ms, box-shadow 400ms;
 }
-button:hover {
+button:hover,
+.button:hover {
   background-color: #ff79da;
   box-shadow: rgba(0, 0, 0, 0.4) 1.95px 1.95px 2.6px;
 }
